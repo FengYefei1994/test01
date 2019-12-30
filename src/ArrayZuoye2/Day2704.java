@@ -3,7 +3,7 @@ package ArrayZuoye2;
 import java.util.Scanner;
 
 /*
- * ËÄ¡¢	Êä³ö5±Ê¹ºÎï½ğ¶î¼°×Ü½ğ¶î
+ * å››ã€	è¾“å‡º5ç¬”è´­ç‰©é‡‘é¢åŠæ€»é‡‘é¢
 
  */
 public class Day2704 {
@@ -11,23 +11,23 @@ public class Day2704 {
 	public static void main(String[] args) {
 		
 		int[] a= new int[5];
-		System.out.println("ÇëÊäÈë5±ÊÏû·Ñ½ğ¶î£º");
+		System.out.println("è¯·è¾“å…¥5ç¬”æ¶ˆè´¹é‡‘é¢ï¼š");
 		Scanner scan=new Scanner(System.in);
 		int sum=0;
 		for(int i=0;i<5;++i) {
-			System.out.print("ÇëÊäÈëµÚ"+(1+i)+"±ÊÏû·Ñ½ğ¶î£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬"+(1+i)+"ç¬”æ¶ˆè´¹é‡‘é¢ï¼š");
 			a[i]=scan.nextInt();
 			sum+=a[i];
 			
 		}
 		scan.close();
-		System.out.println("ĞòºÅ"+"\t½ğ¶î£¨Ôª£©");
+		System.out.println("åºå·"+"\té‡‘é¢ï¼ˆå…ƒï¼‰");
 		int i=1;
 		for(int b:a) {
 			System.out.println(i+"\t"+b);
 			++i;
 		}
-		System.out.println("×Ü½ğ¶î"+"\t"+sum);
+		System.out.println("æ€»é‡‘é¢"+"\t"+sum);
 		
 		
 

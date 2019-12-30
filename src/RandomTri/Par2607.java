@@ -16,6 +16,6 @@ public class Par2607 {
 			}
 		}
 		//scan.close();
-		System.out.println("100ÄÚÅ¼ÊıµÄºÍÊÇ£º"+sum);
+		System.out.println("100å†…å¶æ•°çš„å’Œæ˜¯ï¼š"+sum);
 	}
 }

@@ -4,96 +4,96 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * »ù´¡JavaÉı¼¶ÖĞ¼¶Java°¸ÀıÌâ
+ * åŸºç¡€Javaå‡çº§ä¸­çº§Javaæ¡ˆä¾‹é¢˜
  */
 public class UpLevel {
 
 	public static void main(String[] args) {
 
-		String[] names = new String[0]; // Ñ§Ô±ĞÕÃû
-		int[] ages = new int[0]; // Ñ§Ô±ÄêÁä
-		String[] teams = new String[0]; // Õ½¶ÓÃû³Æ
-		String[] types = new String[0]; // Ñ§Ô±ÀàĞÍ
+		String[] names = new String[0]; // å­¦å‘˜å§“å
+		int[] ages = new int[0]; // å­¦å‘˜å¹´é¾„
+		String[] teams = new String[0]; // æˆ˜é˜Ÿåç§°
+		String[] types = new String[0]; // å­¦å‘˜ç±»å‹
 
-		// Ä¬ÈÏĞÅÏ¢
+		// é»˜è®¤ä¿¡æ¯
 		names = Arrays.copyOf(names, names.length + 5);
 		ages = Arrays.copyOf(ages, ages.length + 5);
 		teams = Arrays.copyOf(teams, teams.length + 5);
 		types = Arrays.copyOf(types, types.length + 5);
 
-		types[0] = "Á÷ĞĞÒôÀÖ";
-		names[0] = "¼ª¿ËöÁÒİ";
+		types[0] = "æµè¡ŒéŸ³ä¹";
+		names[0] = "å‰å…‹éš½é€¸";
 		ages[0] = 23;
-		teams[0] = "Íô·åÕ½¶Ó";
+		teams[0] = "æ±ªå³°æˆ˜é˜Ÿ";
 
-		types[1] = "¹ÅµäÒôÀÖ";
-		names[1] = "ÕÅ±Ì³¿";
+		types[1] = "å¤å…¸éŸ³ä¹";
+		names[1] = "å¼ ç¢§æ™¨";
 		ages[1] = 22;
-		teams[1] = "ÄÇÓ¢Õ½¶Ó";
+		teams[1] = "é‚£è‹±æˆ˜é˜Ÿ";
 
-		types[2] = "Ò¡¹öÒôÀÖ";
-		names[2] = "Áõ°²ç÷";
+		types[2] = "æ‘‡æ»šéŸ³ä¹";
+		names[2] = "åˆ˜å®‰çª";
 		ages[2] = 28;
-		teams[2] = "½ÜÂ×Õ½¶Ó";
+		teams[2] = "æ°ä¼¦æˆ˜é˜Ÿ";
 
-		types[3] = "¹ÅµäÒôÀÖ";
-		names[3] = "Áº²©";
+		types[3] = "å¤å…¸éŸ³ä¹";
+		names[3] = "æ¢åš";
 		ages[3] = 21;
-		teams[3] = "ÄÇÓ¢Õ½¶Ó";
+		teams[3] = "é‚£è‹±æˆ˜é˜Ÿ";
 
-		types[4] = "¹ÅµäÒôÀÖ";
-		names[4] = "Ã«²»Ò×";
+		types[4] = "å¤å…¸éŸ³ä¹";
+		names[4] = "æ¯›ä¸æ˜“";
 		ages[4] = 26;
-		teams[4] = "¹şÁÖÕ½¶Ó";
+		teams[4] = "å“ˆæ—æˆ˜é˜Ÿ";
 
 		Scanner scan = new Scanner(System.in);
 		int num1;
 		do {
-			// ËùÓĞĞÅÏ¢
-			System.out.println("\n" + "---------»¶Ó­À´µ½ÌÆ³ÇºÃÉùÒô---------\n");
-			System.out.println("1¡¢ÏÔÊ¾ËùÓĞÑ§Ô±ĞÅÏ¢");
-			System.out.println("2¡¢¸ù¾İÄêÁä´ÓĞ¡µ½´óÅÅÁĞ");
-			System.out.println("3¡¢Ëæ»ú¹Û¿´Ñ§Ô±¼¼ÄÜÕ¹Ê¾");
-			System.out.println("4¡¢É¾³ıÑ§Ô±");
-			System.out.println("5¡¢Ìí¼ÓÑ§Ô±");
-			System.out.println("0¡¢ÍË³ö\n");
-			// ÇëÓÃ»§Ñ¡Ôñ
-			System.out.print("ÇëÓÃ»§ÊäÈëÑ¡Ôñ£º");
+			// æ‰€æœ‰ä¿¡æ¯
+			System.out.println("\n" + "---------æ¬¢è¿æ¥åˆ°å”åŸå¥½å£°éŸ³---------\n");
+			System.out.println("1ã€æ˜¾ç¤ºæ‰€æœ‰å­¦å‘˜ä¿¡æ¯");
+			System.out.println("2ã€æ ¹æ®å¹´é¾„ä»å°åˆ°å¤§æ’åˆ—");
+			System.out.println("3ã€éšæœºè§‚çœ‹å­¦å‘˜æŠ€èƒ½å±•ç¤º");
+			System.out.println("4ã€åˆ é™¤å­¦å‘˜");
+			System.out.println("5ã€æ·»åŠ å­¦å‘˜");
+			System.out.println("0ã€é€€å‡º\n");
+			// è¯·ç”¨æˆ·é€‰æ‹©
+			System.out.print("è¯·ç”¨æˆ·è¾“å…¥é€‰æ‹©ï¼š");
 			num1 = scan.nextInt();
-			// ÑéÖ¤ÊäÈëµÄÖµÊÇOKµÄ
+			// éªŒè¯è¾“å…¥çš„å€¼æ˜¯OKçš„
 			for1: for (;;) {
 				if (num1 >= 0 && num1 <= 5) {
 					break;
 				} else {
-					System.out.print("ÊäÈë´íÎó£¬ÇëÓÃ»§ÊäÈëÑ¡Ôñ£º");
+					System.out.print("è¾“å…¥é”™è¯¯ï¼Œè¯·ç”¨æˆ·è¾“å…¥é€‰æ‹©ï¼š");
 					num1 = scan.nextInt();
 					continue for1;
 				}
 			}
 			System.out.println();
 
-			// ¸ù¾İÓÃ»§ÊäÈë½øĞĞ¹¦ÄÜÑ¡Ôñ
+			// æ ¹æ®ç”¨æˆ·è¾“å…¥è¿›è¡ŒåŠŸèƒ½é€‰æ‹©
 			switch (num1) {
 
-			case 1: // 1¡¢ÏÔÊ¾ËùÓĞÑ§Ô±ĞÅÏ¢
+			case 1: // 1ã€æ˜¾ç¤ºæ‰€æœ‰å­¦å‘˜ä¿¡æ¯
 				
 				if (names.length == 0) {
-					System.out.println("ÎŞÈÎºÎÑ§Ô±ĞÅÏ¢£¡");
+					System.out.println("æ— ä»»ä½•å­¦å‘˜ä¿¡æ¯ï¼");
 					break;
 				}
 				
 				for (int i = 0; i < names.length; ++i) {
 					if (names[i] != null) {
 						System.out.println(
-								"Ñ§Ô±ÀàĞÍ£º" + types[i] + "\tĞÕÃû£º" + names[i] + "\t\tÄêÁä£º" + ages[i] + "\t\tÕ½¶Ó£º" + teams[i]);
+								"å­¦å‘˜ç±»å‹ï¼š" + types[i] + "\tå§“åï¼š" + names[i] + "\t\tå¹´é¾„ï¼š" + ages[i] + "\t\tæˆ˜é˜Ÿï¼š" + teams[i]);
 					}
 				}
 				break;
 
-			case 2: // 2¡¢¸ù¾İÄêÁä´ÓĞ¡µ½´óÅÅÁĞ
+			case 2: // 2ã€æ ¹æ®å¹´é¾„ä»å°åˆ°å¤§æ’åˆ—
 				
 				if (names.length == 0) {
-					System.out.println("ÎŞÈÎºÎÑ§Ô±ĞÅÏ¢¿É¹©ÅÅĞò£¡");
+					System.out.println("æ— ä»»ä½•å­¦å‘˜ä¿¡æ¯å¯ä¾›æ’åºï¼");
 					break;
 				}
 				
@@ -101,22 +101,22 @@ public class UpLevel {
 					for (int j = 0; j < ages.length - 1 - i; ++j) {
 						if (ages[j] > ages[j + 1]) {
 
-							// Ñ§Ô±ÀàĞÍ¸ü»»Î»ÖÃ
+							// å­¦å‘˜ç±»å‹æ›´æ¢ä½ç½®
 							String tmp1 = types[j + 1];
 							types[j + 1] = types[j];
 							types[j] = tmp1;
 
-							// ĞÕÃû¸ü»»Î»ÖÃ
+							// å§“åæ›´æ¢ä½ç½®
 							String tmp2 = names[j + 1];
 							names[j + 1] = names[j];
 							names[j] = tmp2;
 
-							// ÄêÁä¸ü»»Î»ÖÃ
+							// å¹´é¾„æ›´æ¢ä½ç½®
 							int tmp3 = ages[j + 1];
 							ages[j + 1] = ages[j];
 							ages[j] = tmp3;
 
-							// Õ½¶Ó¸ü»»Î»ÖÃ
+							// æˆ˜é˜Ÿæ›´æ¢ä½ç½®
 							String tmp4 = teams[j + 1];
 							teams[j + 1] = teams[j];
 							teams[j] = tmp4;
@@ -125,34 +125,34 @@ public class UpLevel {
 				}
 
 				break;
-			case 3: // 3¡¢Ëæ»ú¹Û¿´Ñ§Ô±¼¼ÄÜÕ¹Ê¾
+			case 3: // 3ã€éšæœºè§‚çœ‹å­¦å‘˜æŠ€èƒ½å±•ç¤º
 				
 				if (names.length == 0) {
-					System.out.println("ÎŞÈÎºÎÑ§Ô±ĞÅÏ¢£¡");
+					System.out.println("æ— ä»»ä½•å­¦å‘˜ä¿¡æ¯ï¼");
 					break;
 				}
 				
 				int i = (int) (Math.random() * 5 + 1);
-				System.out.println("ÏÖÔÚÕ¹Ê¾µÄÊÇµÚ" + i + "ºÅÑ§Ô±ĞÅÏ¢£º");
-				System.out.println("Ñ§Ô±ÀàĞÍ£º" + types[i - 1] + "\tĞÕÃû£º" + names[i - 1] + "\t\tÄêÁä£º" + ages[i - 1] + "\t\tÕ½¶Ó£º"
+				System.out.println("ç°åœ¨å±•ç¤ºçš„æ˜¯ç¬¬" + i + "å·å­¦å‘˜ä¿¡æ¯ï¼š");
+				System.out.println("å­¦å‘˜ç±»å‹ï¼š" + types[i - 1] + "\tå§“åï¼š" + names[i - 1] + "\t\tå¹´é¾„ï¼š" + ages[i - 1] + "\t\tæˆ˜é˜Ÿï¼š"
 						+ teams[i - 1]);
 
 				break;
-			case 4: // 4¡¢É¾³ıÑ§Ô±
-				// ¼ÓÈëÉ¾³ıÏŞÖÆ¡ª¡ªÎŞÈÎºÎÑ§Ô±Ê±£¬ÌáÊ¾ÎŞÑ§Ô±£¬Ìø³öcase
+			case 4: // 4ã€åˆ é™¤å­¦å‘˜
+				// åŠ å…¥åˆ é™¤é™åˆ¶â€”â€”æ— ä»»ä½•å­¦å‘˜æ—¶ï¼Œæç¤ºæ— å­¦å‘˜ï¼Œè·³å‡ºcase
 
 				if (names.length == 0) {
-					System.out.println("ÒÑÎŞÈÎºÎÑ§Ô±£¬ÎŞ·¨É¾³ı£¡");
+					System.out.println("å·²æ— ä»»ä½•å­¦å‘˜ï¼Œæ— æ³•åˆ é™¤ï¼");
 					break;
 				}
 
 				int numd = 0;
 				do {
 					for (int i1 = 0; i1 < types.length; ++i1) {
-						System.out.println("ĞòºÅ£º" + (1 + i1) + "\t\tÑ§Ô±ÀàĞÍ£º" + types[i1] + "\tĞÕÃû£º" + names[i1] + "\t\tÄêÁä£º"
-								+ ages[i1] + "\t\tÕ½¶Ó£º" + teams[i1]);
+						System.out.println("åºå·ï¼š" + (1 + i1) + "\t\tå­¦å‘˜ç±»å‹ï¼š" + types[i1] + "\tå§“åï¼š" + names[i1] + "\t\tå¹´é¾„ï¼š"
+								+ ages[i1] + "\t\tæˆ˜é˜Ÿï¼š" + teams[i1]);
 					}
-					System.out.println("ÇëÊäÈëÏëÒªÉ¾³ıµÄÑ§Ô±ĞòºÅ£º");
+					System.out.println("è¯·è¾“å…¥æƒ³è¦åˆ é™¤çš„å­¦å‘˜åºå·ï¼š");
 					numd = scan.nextInt();
 				} while (!(1 <= numd && numd <= names.length));
 				for (int k = numd - 1; k < types.length - 1; ++k) {
@@ -167,47 +167,47 @@ public class UpLevel {
 				teams = Arrays.copyOf(teams, teams.length - 1);
 				break;
 
-			case 5: // 5¡¢Ìí¼ÓÑ§Ô±
+			case 5: // 5ã€æ·»åŠ å­¦å‘˜
 				types = Arrays.copyOf(types, types.length + 1);
 				ages = Arrays.copyOf(ages, ages.length + 1);
 				names = Arrays.copyOf(names, names.length + 1);
 				teams = Arrays.copyOf(teams, teams.length + 1);
 
-				System.out.print("ÇëÊäÈëÏëÒªÌí¼ÓµÄÑ§Ô±ĞÕÃû£º");
+				System.out.print("è¯·è¾“å…¥æƒ³è¦æ·»åŠ çš„å­¦å‘˜å§“åï¼š");
 				String namea = scan.next();
 				for1: for (int k = 0; k < types.length; ++k) {
 					if (namea.equals(names[k])) {
-						System.out.print("¸ÃÑ§Ô±ÒÑ´æÔÚ£¬ÇëÖØĞÂÊäÈëÏëÒªÌí¼ÓµÄÑ§Ô±ĞÕÃû£º");
+						System.out.print("è¯¥å­¦å‘˜å·²å­˜åœ¨ï¼Œè¯·é‡æ–°è¾“å…¥æƒ³è¦æ·»åŠ çš„å­¦å‘˜å§“åï¼š");
 						namea = scan.next();
 						continue for1;
 					} else {
 						names[names.length - 1] = namea;
-						System.out.print("ÇëÊäÈëÑ§Ô±ÀàĞÍ£º");
+						System.out.print("è¯·è¾“å…¥å­¦å‘˜ç±»å‹ï¼š");
 						types[types.length - 1] = scan.next();
 
-						System.out.print("ÇëÊäÈëÑ§Ô±ÄêÁä£º");
+						System.out.print("è¯·è¾“å…¥å­¦å‘˜å¹´é¾„ï¼š");
 						ages[ages.length - 1] = scan.nextInt();
 
-						System.out.print("ÇëÊäÈëÑ§Ô±Õ½¶Ó£º");
+						System.out.print("è¯·è¾“å…¥å­¦å‘˜æˆ˜é˜Ÿï¼š");
 						teams[teams.length - 1] = scan.next();
 						break for1;
 					}
 				}
 
-				System.out.println("Ìí¼ÓÑ§Ô±³É¹¦£¡");
+				System.out.println("æ·»åŠ å­¦å‘˜æˆåŠŸï¼");
 				for (int m = 0; m < names.length; ++m) {
 					if (names[m] != null) {
 						System.out.println(
-								"Ñ§Ô±ÀàĞÍ£º" + types[m] + "\tĞÕÃû£º" + names[m] + "\t\tÄêÁä£º" + ages[m] + "\t\tÕ½¶Ó£º" + teams[m]);
+								"å­¦å‘˜ç±»å‹ï¼š" + types[m] + "\tå§“åï¼š" + names[m] + "\t\tå¹´é¾„ï¼š" + ages[m] + "\t\tæˆ˜é˜Ÿï¼š" + teams[m]);
 					}
 				}
 
 				break;
 
-			case 0: // ÍË³ö
+			case 0: // é€€å‡º
 				break;
 
-			default: // ÍË³ö
+			default: // é€€å‡º
 				break;
 			}
 

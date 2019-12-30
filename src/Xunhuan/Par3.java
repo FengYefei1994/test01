@@ -6,18 +6,18 @@ public class Par3 {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
-		System.out.print("ÊäÈëÒ»¸öÇóÖÊÊı¼°ÖÊÊı¸öÊı·¶Î§£º");
+		System.out.print("è¾“å…¥ä¸€ä¸ªæ±‚è´¨æ•°åŠè´¨æ•°ä¸ªæ•°èŒƒå›´ï¼š");
 		int c=scan.nextInt();
 		int count=0;
-		System.out.print(c+"ÒÔÄÚµÄÖÊÊıÊÇ£º");
+		System.out.print(c+"ä»¥å†…çš„è´¨æ•°æ˜¯ï¼š");
 		for(int i=2;i<=c;++i) {
 		if(Par31.isPrimeNormal(i)) {
-			System.out.print(i+"£»");
+			System.out.print(i+"ï¼›");
 			++count;
 		}
 		}
 		System.out.println();
-		System.out.print(c+"ÄÚÖÊÊı¸öÊı£º"+count);
+		System.out.print(c+"å†…è´¨æ•°ä¸ªæ•°ï¼š"+count);
 		scan.close();
 	}
 }

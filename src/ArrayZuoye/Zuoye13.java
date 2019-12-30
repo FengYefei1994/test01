@@ -1,14 +1,14 @@
 package ArrayZuoye;
 
-/*5.13	Êı×éµÄÉ¾³ı(¼ÙÉèÊı×éÖĞÃ»ÓĞÖØ¸´ÔªËØ)
+/*5.13	æ•°ç»„çš„åˆ é™¤(å‡è®¾æ•°ç»„ä¸­æ²¡æœ‰é‡å¤å…ƒç´ )
 */
 public class Zuoye13 {
 
 	public static void main(String[] args) {
 		int[] a = { 38, 15, 33, 36, 13, 2, 809, 43 };
-		System.out.print("ĞŞ¸ÄÇ°Êı×é£º");
+		System.out.print("ä¿®æ”¹å‰æ•°ç»„ï¼š");
 		for (int b : a) {
-			System.out.print(b + "£»");
+			System.out.print(b + "ï¼›");
 		}
 		System.out.println();
 
@@ -16,9 +16,9 @@ public class Zuoye13 {
 			a[i] = a[i + 1];
 		}
 		a[a.length - 1] = 0;
-		System.out.print("ĞŞ¸ÄºóÊı×é£º");
+		System.out.print("ä¿®æ”¹åæ•°ç»„ï¼š");
 		for (int b : a) {
-			System.out.print(b + "£»");
+			System.out.print(b + "ï¼›");
 		}
 	}
 }

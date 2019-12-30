@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//5.8 Ò»¸ö³¤¶ÈÎª5µÄÊı×é£¬ÊäÈëËùÓĞÔªËØ£¬ÅĞ¶ÏÕâ¸öÊı×éÖĞÊÇ·ñ´æÔÚÏàÍ¬µÄÔªËØ£¬
-//Èç¹û´æÔÚÏàÍ¬µÄÔªËØÔòÊä³ö¡°ÓĞÖØ¸´ÔªËØ¡±£¬·ñÔòÊä³ö¡°Ã»ÓĞÖØ¸´ÔªËØ¡±¡£
+//5.8 ä¸€ä¸ªé•¿åº¦ä¸º5çš„æ•°ç»„ï¼Œè¾“å…¥æ‰€æœ‰å…ƒç´ ï¼Œåˆ¤æ–­è¿™ä¸ªæ•°ç»„ä¸­æ˜¯å¦å­˜åœ¨ç›¸åŒçš„å…ƒç´ ï¼Œ
+//å¦‚æœå­˜åœ¨ç›¸åŒçš„å…ƒç´ åˆ™è¾“å‡ºâ€œæœ‰é‡å¤å…ƒç´ â€ï¼Œå¦åˆ™è¾“å‡ºâ€œæ²¡æœ‰é‡å¤å…ƒç´ â€ã€‚
 
 public class Zuoye08 {
 
@@ -15,18 +15,18 @@ public class Zuoye08 {
 
 		/*
 		 * FileReader reader=new FileReader("src/ArrayZuoye/Zuoye08Secret.txt");
-		 * //¶ÁÈ¡ÎÄ¼ş£»ÒıºÅÖĞÊÇÎÄ¼şÂ·¾¶£¬ÓÃ"/"¼´¿É char[] arr=new char[6]; //½¨Á¢Ò»¸öÊı×é·ÅÃÜÂë reader.read(arr);
-		 * //¶ÁÈ¡ÎÄ¼şÖĞÃÜÂë String pwd=new String(); reader.close(); //¹Ø±ÕÎÄ¼ş
+		 * //è¯»å–æ–‡ä»¶ï¼›å¼•å·ä¸­æ˜¯æ–‡ä»¶è·¯å¾„ï¼Œç”¨"/"å³å¯ char[] arr=new char[6]; //å»ºç«‹ä¸€ä¸ªæ•°ç»„æ”¾å¯†ç  reader.read(arr);
+		 * //è¯»å–æ–‡ä»¶ä¸­å¯†ç  String pwd=new String(); reader.close(); //å…³é—­æ–‡ä»¶
 		 */
 
-		// ÊµÏÖÒ»¸öÊı×éÖĞÔªËØÖØ¸´Óë·ñÅĞ¶Ï
-		// ÒÑÊµÏÖÅĞ¶ÏÊÇ·ñÓĞÏàÍ¬ÔªËØ
-		// Î´ÊµÏÖÊä³öÏàÍ¬ÔªËØ
+		// å®ç°ä¸€ä¸ªæ•°ç»„ä¸­å…ƒç´ é‡å¤ä¸å¦åˆ¤æ–­
+		// å·²å®ç°åˆ¤æ–­æ˜¯å¦æœ‰ç›¸åŒå…ƒç´ 
+		// æœªå®ç°è¾“å‡ºç›¸åŒå…ƒç´ 
 		int[] a = new int[0];
 		Scanner input = new Scanner(System.in);
 
 		int[] b = Arrays.copyOf(a, 5);
-		System.out.print("ÇëÊäÈë5¸öÕûÊı£º");
+		System.out.print("è¯·è¾“å…¥5ä¸ªæ•´æ•°ï¼š");
 		for (int i = 0; i < 5; ++i) {
 			b[i] = input.nextInt();
 		}
@@ -35,13 +35,13 @@ public class Zuoye08 {
 			for (int j = i + 1; j < b.length; ++j) {
 				if ((b[i] == b[j])) {
 					++k;
-					System.out.println("´æÔÚÏàÍ¬ÔªËØ£º" + b[i]);
-					continue for1; // ´ø±êÇ©µÄbreak¡¢continueÓÃ·¨
+					System.out.println("å­˜åœ¨ç›¸åŒå…ƒç´ ï¼š" + b[i]);
+					continue for1; // å¸¦æ ‡ç­¾çš„breakã€continueç”¨æ³•
 				}
 			}
 		}
 		if (k == 0) {
-			System.out.println("²»´æÔÚÏàÍ¬ÔªËØ");
+			System.out.println("ä¸å­˜åœ¨ç›¸åŒå…ƒç´ ");
 		}
 	}
 }

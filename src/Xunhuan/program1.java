@@ -1,4 +1,4 @@
-//Ëæ»úÒ»¸öĞ¡Ğ´×ÖÄ¸£¬½øĞĞ²Â×ÖÄ¸ÓÎÏ·£¬²¢Í³¼Æ²Â²â´ÎÊı
+//éšæœºä¸€ä¸ªå°å†™å­—æ¯ï¼Œè¿›è¡ŒçŒœå­—æ¯æ¸¸æˆï¼Œå¹¶ç»Ÿè®¡çŒœæµ‹æ¬¡æ•°
 
 package Xunhuan;
 
@@ -6,8 +6,8 @@ import java.util.*;
 public class program1 {
 	public static void main(String[] args) {
 		/*
-		 * Éú³É [min,max] µÄÊı×Ö
-         * int i1 =(int) Math.random() *(max-min+1)+m;¡ª¡ª¡ª¡ª¡ª¡ªÇ¿ÖÆ×ª»»ÀàĞÍÎªint£¬ÆäËûÒ²¿É
+		 * ç”Ÿæˆ [min,max] çš„æ•°å­—
+         * int i1 =(int) Math.random() *(max-min+1)+m;â€”â€”â€”â€”â€”â€”å¼ºåˆ¶è½¬æ¢ç±»å‹ä¸ºintï¼Œå…¶ä»–ä¹Ÿå¯
          * ran.next(26)+97;
          * (Math.random()*26+97)
          * 
@@ -16,18 +16,18 @@ public class program1 {
 		char a = (char) (Math.random()*(122-97+1)+97);
 		//System.out.println(a);
 		int i;
-		Scanner scan= new Scanner(System.in);       //É¨ÃèÆ÷
+		Scanner scan= new Scanner(System.in);       //æ‰«æå™¨
 		for(i=1;;i++){
-		System.out.println("ÇëÊäÈëÒ»¸öĞ¡Ğ´×ÖÄ¸£º");
-		String r=scan.next();                       //½ÓÊÕÊı¾İ
-		if(r.charAt(0)==a) {                        //charÓĞÔËËã¹¦ÄÜ£º±È´óĞ¡£¬¼Ó¼õ³Ë³ı£¨×ª»»ÎªASCIIÂëÖµ½øĞĞÔËËã£©
-			System.out.println("²ÂÖĞÁË");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå°å†™å­—æ¯ï¼š");
+		String r=scan.next();                       //æ¥æ”¶æ•°æ®
+		if(r.charAt(0)==a) {                        //charæœ‰è¿ç®—åŠŸèƒ½ï¼šæ¯”å¤§å°ï¼ŒåŠ å‡ä¹˜é™¤ï¼ˆè½¬æ¢ä¸ºASCIIç å€¼è¿›è¡Œè¿ç®—ï¼‰
+			System.out.println("çŒœä¸­äº†");
 			break;
 		}
 		else if(r.charAt(0)<a) {
-			System.out.print("²ÂĞ¡ÁË£¬");
+			System.out.print("çŒœå°äº†ï¼Œ");
 		}else{
-			System.out.print("²Â´óÁË£¬");
+			System.out.print("çŒœå¤§äº†ï¼Œ");
 		}
 		}
 		System.out.println(i);

@@ -2,23 +2,23 @@ package ArrayZuoye;
 
 import java.util.Arrays;
 
-/*5.14 Ö±½Ó³õÊ¼»¯Á½¸ö×Ö·û´®Êý×é£¬´úÂëÅÐ¶ÏÕâÁ½¸öÊý×éµÄËùÓÐÔªËØÊÇ·ñÍêÈ«ÏàÍ¬
- * £¨ÒªÇóÁ½¸öÊý×éµÄËùÓÐÔªËØ´óÐ¡ºÍË³Ðò¶¼ÍêÈ«Ò»ÖÂ£©¡£
+/*5.14 ç›´æŽ¥åˆå§‹åŒ–ä¸¤ä¸ªå­—ç¬¦ä¸²æ•°ç»„ï¼Œä»£ç åˆ¤æ–­è¿™ä¸¤ä¸ªæ•°ç»„çš„æ‰€æœ‰å…ƒç´ æ˜¯å¦å®Œå…¨ç›¸åŒ
+ * ï¼ˆè¦æ±‚ä¸¤ä¸ªæ•°ç»„çš„æ‰€æœ‰å…ƒç´ å¤§å°å’Œé¡ºåºéƒ½å®Œå…¨ä¸€è‡´ï¼‰ã€‚
 */
 public class Zuoye14 {
 
 	public static void main(String[] args) {
-		String[] a = new String[] { "°×ðØ", "µ¤¶¥º×", "»Æð¿", "ðÐðÄ", "ÀÏÓ¥", "²¼¹ÈÄñ", "»Æð¿", "ðÐðÄ", "ÀÏÓ¥" };
+		String[] a = new String[] { "ç™½é¹­", "ä¸¹é¡¶é¹¤", "é»„é¹‚", "é¹¦é¹‰", "è€é¹°", "å¸ƒè°·é¸Ÿ", "é»„é¹‚", "é¹¦é¹‰", "è€é¹°" };
 		String[] b = Arrays.copyOf(a, 9);
-		b[5] = "ºþ±±·¿";
+		b[5] = "æ¹–åŒ—æˆ¿";
 
 		for (int i = 0; i < b.length; ++i) {
 			if (!a[i].equals(b[i])) {
-				System.out.print("×Ö·û´®²»µÈ");
+				System.out.print("å­—ç¬¦ä¸²ä¸ç­‰");
 				break;
 			} else {
 				if (i == (a.length - 1)) {
-					System.out.print("×Ö·û´®ÏàµÈ");
+					System.out.print("å­—ç¬¦ä¸²ç›¸ç­‰");
 				}
 			}
 		}

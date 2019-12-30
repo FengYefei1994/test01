@@ -1,7 +1,7 @@
 package ArrayZuoye;
 
 /*
- * 5.18	¼ÙÉèÓĞÊı×éint[] arr={2,3,1,0,2,5,3}£¬Êä³öÆäÖĞµÄÖØ¸´Êı×Ö
+ * 5.18	å‡è®¾æœ‰æ•°ç»„int[] arr={2,3,1,0,2,5,3}ï¼Œè¾“å‡ºå…¶ä¸­çš„é‡å¤æ•°å­—
  */
 public class Zuoye18 {
 
@@ -11,8 +11,8 @@ public class Zuoye18 {
 		for1: for (int i = 0; i < b.length - 1; ++i) {
 			for (int j = i + 1; j < b.length; ++j) {
 				if ((b[i] == b[j])) {
-					System.out.println("´æÔÚÏàÍ¬ÔªËØ£º" + b[i]);
-					continue for1; // ´ø±êÇ©µÄbreak¡¢continueÓÃ·¨
+					System.out.println("å­˜åœ¨ç›¸åŒå…ƒç´ ï¼š" + b[i]);
+					continue for1; // å¸¦æ ‡ç­¾çš„breakã€continueç”¨æ³•
 				}
 			}
 		}

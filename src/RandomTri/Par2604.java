@@ -6,7 +6,7 @@ public class Par2604 {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
-		System.out.print("请输入一个值：");
+		System.out.print("璇疯緭鍏ヤ竴涓�硷細");
 		int a=scan.nextInt();
 		scan.close();
 		for(int i=0;i<=a;++i){

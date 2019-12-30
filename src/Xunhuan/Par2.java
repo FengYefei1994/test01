@@ -6,34 +6,34 @@ public class Par2 {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
-		System.out.print("ÇëÊäÈëÒ»¸öÕıÕûÊı£º");
+		System.out.print("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼š");
 		int a=scan.nextInt();
 		//System.out.println(a);
 		/*
 		int i=2;
 		if(a==2||a==3) {
-			System.out.println(a+"ÊÇÖÊÊı£¡");
+			System.out.println(a+"æ˜¯è´¨æ•°ï¼");
 		}else{
 			for(;i<=a-1;++i) {
 				if((a%i)==0) {
-					//System.out.println("Òò×ÓÖ®Ò»£º"+i);
-					//System.out.println(a+"ÊÇÒ»¸öºÏÊı£¡");
+					//System.out.println("å› å­ä¹‹ä¸€ï¼š"+i);
+					//System.out.println(a+"æ˜¯ä¸€ä¸ªåˆæ•°ï¼");
 					break;
 				}else {
 					if(i==a-1) {
-						System.out.println(a+"ÊÇÒ»¸öÖÊÊı£¡");
+						System.out.println(a+"æ˜¯ä¸€ä¸ªè´¨æ•°ï¼");
 					}
 				}
 			}
 		}
 		*/
 		
-		//JavaÄÚÖÃº¯ÊıÇóÖÊÊı
+		//Javaå†…ç½®å‡½æ•°æ±‚è´¨æ•°
 		
 		if(Par31.isPrimeNormal(a)) {
-			System.out.println(a+"ÊÇÒ»¸öÖÊÊı£¡");
+			System.out.println(a+"æ˜¯ä¸€ä¸ªè´¨æ•°ï¼");
 		}else {
-			System.out.println(a+"ÊÇÒ»¸öºÏÊı£¡");
+			System.out.println(a+"æ˜¯ä¸€ä¸ªåˆæ•°ï¼");
 		}
 		
 	scan.close();

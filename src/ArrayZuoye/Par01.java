@@ -10,19 +10,19 @@ public class Par01 {
 		int numb1 = 0;
 		double sum = 0f;
 		double aver = 0.0;
-		System.out.print("ÇëÊäÈëÑ§ÉúÈËÊı£º");
+		System.out.print("è¯·è¾“å…¥å­¦ç”Ÿäººæ•°ï¼š");
 		numb1 = input.nextInt();
 		double[] score = new double[numb1];
-		System.out.print("ÇëÊäÈëÑ§Éú³É¼¨£º");
+		System.out.print("è¯·è¾“å…¥å­¦ç”Ÿæˆç»©ï¼š");
 		for (int i = 0; i < score.length; ++i) {
 			score[i] = input.nextDouble();
 			sum += score[i];
 		}
 		input.close();
 		aver = sum / score.length;
-		// System.out.println(numb1+"ÈËÆ½¾ù³É¼¨Îª£º"+aver);
+		// System.out.println(numb1+"äººå¹³å‡æˆç»©ä¸ºï¼š"+aver);
 
-		// ÅĞ¶Ï³É¼¨ÊÇ·ñĞèÒª´¦Àí
+		// åˆ¤æ–­æˆç»©æ˜¯å¦éœ€è¦å¤„ç†
 		if (aver < 60) {
 			sum = 0.0;
 			for (int i = 0; i < score.length; ++i) {
@@ -30,12 +30,12 @@ public class Par01 {
 				sum += score[i];
 			}
 			aver = sum / score.length;
-			System.out.println("´¦Àíºó" + numb1 + "ÈËÆ½¾ù³É¼¨Îª£º" + aver);
+			System.out.println("å¤„ç†å" + numb1 + "äººå¹³å‡æˆç»©ä¸ºï¼š" + aver);
 			Arrays.sort(score);
-			System.out.println("´¦Àíºó×î¸ß³É¼¨Îª£º" + score[score.length - 1]);
+			System.out.println("å¤„ç†åæœ€é«˜æˆç»©ä¸ºï¼š" + score[score.length - 1]);
 		}
 
-		// Ã¿5¸öÒ»ĞĞÊä³ö
+		// æ¯5ä¸ªä¸€è¡Œè¾“å‡º
 		int i = 0;
 		for (double a : score) {
 			System.out.print(a + "\t");

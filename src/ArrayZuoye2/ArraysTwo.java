@@ -6,47 +6,47 @@ public class ArraysTwo {
 
 	public static void main(String[] args) {
 		Scanner input=new Scanner(System.in);
-		System.out.println("ÓĞ¼¸¸ö°à£º");
-		int classcount =input.nextInt();                          //ÓÃÀ´±£´æ¸÷¸ö°àµÄËùÓĞÑ§ÉúÃûµ¥
-		String[][] names=new String[classcount][];                //namesµÄ³¤¶ÈÆäÊµÊÇ×î¸ßÎ¬µÄ³¤¶È£¬Ò²¾ÍÊÇ°à¼¶Êı£¬Ò²¾ÍÊÇclassCount
+		System.out.println("æœ‰å‡ ä¸ªç­ï¼š");
+		int classcount =input.nextInt();                          //ç”¨æ¥ä¿å­˜å„ä¸ªç­çš„æ‰€æœ‰å­¦ç”Ÿåå•
+		String[][] names=new String[classcount][];                //namesçš„é•¿åº¦å…¶å®æ˜¯æœ€é«˜ç»´çš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯ç­çº§æ•°ï¼Œä¹Ÿå°±æ˜¯classCount
 		for(int i=0;i<names.length;++i) {
-			System.out.println("µÚ"+(i+1)+"¸ö°àÓĞ¶àÉÙ¸öÈË£¿");
+			System.out.println("ç¬¬"+(i+1)+"ä¸ªç­æœ‰å¤šå°‘ä¸ªäººï¼Ÿ");
 			int studentcount =input.nextInt();
 			names[i]=new String[studentcount];
 		}
 		
 		for(int i=0;i<names.length;++i) {
-			for(int j=0;j<names[i].length;++j) {                 //¾ßÌåµ½µÚ¼¸ÁĞÊı×é¾ÍÓÃ    Êı×éÃû[ÁĞÊı].length    ±íÊ¾
-				names[i][j]=(i+1)+"°à"+(j+1)+"Ñ§Ô±";
+			for(int j=0;j<names[i].length;++j) {                 //å…·ä½“åˆ°ç¬¬å‡ åˆ—æ•°ç»„å°±ç”¨    æ•°ç»„å[åˆ—æ•°].length    è¡¨ç¤º
+				names[i][j]=(i+1)+"ç­"+(j+1)+"å­¦å‘˜";
 			}
 		}
 		
-		int lostTotal=0;//ËùÓĞ°àµÄ×ÜÈ±ÇÚÈËÊı
-		int countTotal = 0;//ËùÓĞ°àµÄ×ÜÈËÊı
+		int lostTotal=0;//æ‰€æœ‰ç­çš„æ€»ç¼ºå‹¤äººæ•°
+		int countTotal = 0;//æ‰€æœ‰ç­çš„æ€»äººæ•°
 		for (int i = 0; i < names.length; i++) {
-			int lost = 0;//µÚi°àÈ±ÇÚÈËÊı
-			System.out.println((i+1)+"°à¿ªÊ¼µãÃû------------------------------------");
+			int lost = 0;//ç¬¬iç­ç¼ºå‹¤äººæ•°
+			System.out.println((i+1)+"ç­å¼€å§‹ç‚¹å------------------------------------");
 			for (int j = 0; j < names[i].length; j++) {
-				System.out.print(names[i][j]+"ÊÇ·ñµ½y/n£¿");
+				System.out.print(names[i][j]+"æ˜¯å¦åˆ°y/nï¼Ÿ");
 				String answer = input.next();
 				if (answer.equals("n")) {
 					lost++;
 				}
 			}
-			System.out.println((i+1)+"°àµãÃû½áÊø------------------------------------\n");
-			System.out.println((i+1)+"°à¿¼ÇÚ½á¹û£º");
-			System.out.println("Ó¦µ½ÈËÊı£º"+names[i].length);
-			System.out.println("Êµµ½ÈËÊı£º"+(names[i].length-lost));
+			System.out.println((i+1)+"ç­ç‚¹åç»“æŸ------------------------------------\n");
+			System.out.println((i+1)+"ç­è€ƒå‹¤ç»“æœï¼š");
+			System.out.println("åº”åˆ°äººæ•°ï¼š"+names[i].length);
+			System.out.println("å®åˆ°äººæ•°ï¼š"+(names[i].length-lost));
 			double rate = (double)(names[i].length-lost)/names[i].length;
-			System.out.println("³öÇÚÂÊ£º"+rate*100+"%");
+			System.out.println("å‡ºå‹¤ç‡ï¼š"+rate*100+"%");
 			lostTotal += lost;
 			countTotal+= names[i].length;
 		}
-		System.out.println("\n\n*****************×ÜµÄ¿¼ÇÚ½á¹û*****************");
-		System.out.println("Ó¦µ½ÈËÊı£º"+countTotal);
-		System.out.println("Êµµ½ÈËÊı£º"+(countTotal-lostTotal));
+		System.out.println("\n\n*****************æ€»çš„è€ƒå‹¤ç»“æœ*****************");
+		System.out.println("åº”åˆ°äººæ•°ï¼š"+countTotal);
+		System.out.println("å®åˆ°äººæ•°ï¼š"+(countTotal-lostTotal));
 		double rate = (double)(countTotal-lostTotal)/countTotal;
-		System.out.println("³öÇÚÂÊ£º"+rate*100+"%");
+		System.out.println("å‡ºå‹¤ç‡ï¼š"+rate*100+"%");
 
 		input.close();
 	}

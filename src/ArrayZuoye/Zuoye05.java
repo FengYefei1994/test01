@@ -7,32 +7,32 @@ import java.util.Arrays;
 public class Zuoye05 {
 
 	public static void main(String[] args) {
-		// 5.1½«²»Îª0µÄÖµ´æÈëÒ»¸öĞÂµÄÊı×é
+		// 5.1å°†ä¸ä¸º0çš„å€¼å­˜å…¥ä¸€ä¸ªæ–°çš„æ•°ç»„
 		int[] a = { 1, 0, 0, 6, 0, 6, 5, 4, 7, 0, 5 };
 		/*
 		 * Arrays.sort(a); System.out.println(Arrays.toString(a));
 		 * System.out.println(Arrays.binarySearch(a, 1));
 		 */
 
-		// Ã¿ÓĞĞÂÔªËØ£¬¸üĞÂÊı×é
-		// Ğ§ÂÊµÍ
+		// æ¯æœ‰æ–°å…ƒç´ ï¼Œæ›´æ–°æ•°ç»„
+		// æ•ˆç‡ä½
 		int[] b = new int[0];
 		for (int i = 0; i < a.length; ++i) {
 			if (a[i] != 0) {
-				b = Arrays.copyOf(b, b.length + 1); // Ã¿´Î¸´ÖÆ¸üĞÂÊı×éĞ§ÂÊµÍ£¬ÄÚ´æÌæ»»ÀË·Ñ
+				b = Arrays.copyOf(b, b.length + 1); // æ¯æ¬¡å¤åˆ¶æ›´æ–°æ•°ç»„æ•ˆç‡ä½ï¼Œå†…å­˜æ›¿æ¢æµªè´¹
 				b[b.length - 1] = a[i];
-				System.out.print(b[b.length - 1] + "£¬");
+				System.out.print(b[b.length - 1] + "ï¼Œ");
 			}
 		}
 
-		// ¸ù¾İ³¤¶È£¬ÔÙÅĞ¶Ï0£¬¸³Öµ
+		// æ ¹æ®é•¿åº¦ï¼Œå†åˆ¤æ–­0ï¼Œèµ‹å€¼
 		/*
 		 * int len=0; for(int c:a) { if(c!=0) { ++len; } } int[] b=new int[len]; int
 		 * j=0; for(int i=0;i<a.length;++i) { if(a[i]!=0) { b[j]=a[i];
-		 * System.out.print(b[j]+"£¬"); ++j; //ĞÂÊı×éÔªËØÏÂ±ê£¬Í¬ÎªĞÂÊı×éÓĞĞ§ÔªËØ¸öÊı } }
+		 * System.out.print(b[j]+"ï¼Œ"); ++j; //æ–°æ•°ç»„å…ƒç´ ä¸‹æ ‡ï¼ŒåŒä¸ºæ–°æ•°ç»„æœ‰æ•ˆå…ƒç´ ä¸ªæ•° } }
 		 */
 
-		// copyOfÊ¹ÓÃ£¬²»¿¼ÂÇÊä³öÊı×éÔªËØË³ĞòµÄ»°
+		// copyOfä½¿ç”¨ï¼Œä¸è€ƒè™‘è¾“å‡ºæ•°ç»„å…ƒç´ é¡ºåºçš„è¯
 		/*
 		 * Arrays.sort(a); int len=0; for(int c:a) { if(c==0) { ++len; } } int[]
 		 * b=Arrays.copyOfRange(a, len, a.length);

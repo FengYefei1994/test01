@@ -2,7 +2,7 @@ package ArrayZuoye;
 
 import java.util.Arrays;
 
-//5.9 Êä³öì³²¨ÄÇÆõÊıÁĞµÄÇ°10¸öÊı
+//5.9 è¾“å‡ºæ–æ³¢é‚£å¥‘æ•°åˆ—çš„å‰10ä¸ªæ•°
 
 public class Zuoye09 {
 
@@ -16,7 +16,7 @@ public class Zuoye09 {
 			a[i + 2] = a[i] + a[i + 1];
 		}
 		for (int b : a) {
-			System.out.print(b + "£»");
+			System.out.print(b + "ï¼›");
 		}
 	}
 }

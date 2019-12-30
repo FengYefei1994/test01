@@ -11,7 +11,7 @@ public class Par1 {
 		int max=0;
 		int min = 45;
 		int i=0;
-		System.out.print("ÇëÊäÈëÒ»¸öÊı×Ö£º");
+		System.out.print("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—ï¼š");
 		int a=scan.nextInt();
 		do {
 			if(a==0) {
@@ -27,14 +27,14 @@ public class Par1 {
 					min=a;
 				}
 			}
-			System.out.print("ÇëÊäÈëÒ»¸öÊı×Ö£º");
+			System.out.print("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—ï¼š");
 			a=scan.nextInt();
 		}while(a!=0);
-		System.out.println("ºÍ£º"+sum);
-		System.out.println("aver£º"+aver);
-		System.out.println("i£º"+i);
-		System.out.println("max£º"+max);
-		System.out.println("min£º"+min);
+		System.out.println("å’Œï¼š"+sum);
+		System.out.println("averï¼š"+aver);
+		System.out.println("iï¼š"+i);
+		System.out.println("maxï¼š"+max);
+		System.out.println("minï¼š"+min);
 		scan.close();
 	}
 }

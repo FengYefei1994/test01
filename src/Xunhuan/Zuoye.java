@@ -1,10 +1,10 @@
 /*
- * 12-23ÉÏÎç×÷Òµ
- * 1¡¢1.01µÄ365´Î½á¹û
- * 2¡¢1.01µÄ¶àÉÙ´ÎÃİ´óÓÚ30
- * 3¡¢1-100ÖĞ3±¶ÊıºÍ
- * 4¡¢ÅĞ¶Ï×Ö·û´®ÖĞÊÇ·ñÓĞÊı×Ö
- * 5¡¢1900-2020ÖĞÈòÄê
+ * 12-23ä¸Šåˆä½œä¸š
+ * 1ã€1.01çš„365æ¬¡ç»“æœ
+ * 2ã€1.01çš„å¤šå°‘æ¬¡å¹‚å¤§äº30
+ * 3ã€1-100ä¸­3å€æ•°å’Œ
+ * 4ã€åˆ¤æ–­å­—ç¬¦ä¸²ä¸­æ˜¯å¦æœ‰æ•°å­—
+ * 5ã€1900-2020ä¸­é—°å¹´
  */
 
 package Xunhuan;
@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Zuoye {
 
 	public static void main(String[] args) {
-		//Çó½á¹û
+		//æ±‚ç»“æœ
 		/*double a=1.01;
 		double b=1;
 		for(int i=1;i<=365;i++) {
@@ -24,21 +24,21 @@ public class Zuoye {
 		*/
 		
 		
-		//Çó³¬¹ı30Ê±´Î·½Êı
+		//æ±‚è¶…è¿‡30æ—¶æ¬¡æ–¹æ•°
 		double a=1.01;
 		double b=1;
 		for(int i=1;i<=365;i++) {
 			b=a*b;
 			if(b>=30) {
-				System.out.println("ÔÚµÚ"+i+"´ÎÊ±£¬½á¹û´óÓÚ30£¡");
+				System.out.println("åœ¨ç¬¬"+i+"æ¬¡æ—¶ï¼Œç»“æœå¤§äº30ï¼");
 				break;
 			}
 		}
 		
-		double r=Math.pow(1.01,365);              //JDKÊıÑ§¼ÆËã¹«Ê½
+		double r=Math.pow(1.01,365);              //JDKæ•°å­¦è®¡ç®—å…¬å¼
 		
 		
-		//1-100ÖĞ3±¶ÊıµÄºÍ
+		//1-100ä¸­3å€æ•°çš„å’Œ
 		/*
 		int sum=0;
 		for(int i=1;i<=100;i++) {
@@ -49,7 +49,7 @@ public class Zuoye {
 		System.out.println(sum);
 		*/
 				
-		//1900-2020Ö®¼äµÄÈòÄê
+		//1900-2020ä¹‹é—´çš„é—°å¹´
 		/*
 		for(int i=1900;i<=2020;i++) {
 				 
@@ -59,10 +59,10 @@ public class Zuoye {
 		}
 		*/
 				
-		//ÈÎÒâ×Ö·û´®ÖĞÊÇ·ñ°üº¬Êı×Ö
-		/*Scanner scan= new Scanner(System.in);       //É¨ÃèÆ÷
-		System.out.println("ÇëÊäÈëÈÎÒâ×Ö·û´®£º");
-		String r=scan.next();                         //½ÓÊÕÊı¾İ    input.next()ÊÇ×Ö·û´®ÊäÈë
+		//ä»»æ„å­—ç¬¦ä¸²ä¸­æ˜¯å¦åŒ…å«æ•°å­—
+		/*Scanner scan= new Scanner(System.in);       //æ‰«æå™¨
+		System.out.println("è¯·è¾“å…¥ä»»æ„å­—ç¬¦ä¸²ï¼š");
+		String r=scan.next();                         //æ¥æ”¶æ•°æ®    input.next()æ˜¯å­—ç¬¦ä¸²è¾“å…¥
 		int a=r.length();
 		int b=0;
 		System.out.println(a);
@@ -73,9 +73,9 @@ public class Zuoye {
 				}
 		}
 		if(b>0) {
-			System.out.println("°üº¬Êı×Ö£º"+b+"¸ö£¡");
+			System.out.println("åŒ…å«æ•°å­—ï¼š"+b+"ä¸ªï¼");
 		}else{
-			System.out.println("²»°üº¬Êı×Ö£¡");
+			System.out.println("ä¸åŒ…å«æ•°å­—ï¼");
 		}
 		*/
 				

@@ -1,6 +1,6 @@
 package ArrayZuoye2;
 /*
- * Ò»¡¢	¼ÆËãÈ«°à£¨30ÈË£©µÄÆ½¾ù·Ö
+ * ä¸€ã€	è®¡ç®—å…¨ç­ï¼ˆ30äººï¼‰çš„å¹³å‡åˆ†
  */
 public class Day2701 {
 
@@ -16,7 +16,7 @@ public class Day2701 {
 			sum+=a;
 		}
 		aver=sum/score.length;
-		System.out.println("30ÈËµÄÆ½¾ù³É¼¨ÊÇ£º"+aver);
+		System.out.println("30äººçš„å¹³å‡æˆç»©æ˜¯ï¼š"+aver);
 	}
 
 }

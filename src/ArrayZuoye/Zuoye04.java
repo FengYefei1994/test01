@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Zuoye04 {
 
 	public static void main(String[] args) {
-		// 5.4 ÈÎÒâÊäÈë5¸öÈËÃû£¬ÔÚÆäÖĞ²éÕÒÒ»¸öÖ¸¶¨µÄÈË
+		// 5.4 ä»»æ„è¾“å…¥5ä¸ªäººåï¼Œåœ¨å…¶ä¸­æŸ¥æ‰¾ä¸€ä¸ªæŒ‡å®šçš„äºº
 
 		Scanner scan = new Scanner(System.in);
-		String[] array = new String[] { "ÕÅÈı", "ÀîËÄ", "Íø¶ş", "ÀîÂé×Ó", "ÍõÎå" };
-		System.out.print("ÇëÊäÈëÏë²éÕÒµÄÃû×Ö£º");
+		String[] array = new String[] { "å¼ ä¸‰", "æå››", "ç½‘äºŒ", "æéº»å­", "ç‹äº”" };
+		System.out.print("è¯·è¾“å…¥æƒ³æŸ¥æ‰¾çš„åå­—ï¼š");
 		String name = scan.next();
 		scan.close();
 		for (String j : array) {
 			if (j.equals(name)) {
-				System.out.println("ÓĞ" + name + "Õâ¸öÈË£¡");
+				System.out.println("æœ‰" + name + "è¿™ä¸ªäººï¼");
 				break;
 			} else if (j.equals(array[array.length - 1])) {
-				System.out.println("Ã»ÓĞ" + name + "Õâ¸öÈË£¡");
+				System.out.println("æ²¡æœ‰" + name + "è¿™ä¸ªäººï¼");
 			}
 		}
 	}

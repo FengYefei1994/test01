@@ -2,8 +2,8 @@ package ArrayZuoye;
 
 import java.util.Arrays;
 
-/*5.19	Ëæ»úÊı´´½¨Ò»¸ö³¤¶ÈÎª6µÄintĞÍÊı×é£¬ÒªÇóÈ¡ÖµÎª1-30
- * ÒªÇóÊı×éÖĞ¸÷¸öÔªËØÖµ¸÷²»ÏàÍ¬
+/*5.19	éšæœºæ•°åˆ›å»ºä¸€ä¸ªé•¿åº¦ä¸º6çš„intå‹æ•°ç»„ï¼Œè¦æ±‚å–å€¼ä¸º1-30
+ * è¦æ±‚æ•°ç»„ä¸­å„ä¸ªå…ƒç´ å€¼å„ä¸ç›¸åŒ
 */
 public class Zuoye19 {
 
@@ -23,15 +23,15 @@ public class Zuoye19 {
 			}
 		}
 
-		// ´òÓ¡Êı×é·½Ê½1
-		System.out.print("Ëæ»úÊı×é£º");
+		// æ‰“å°æ•°ç»„æ–¹å¼1
+		System.out.print("éšæœºæ•°ç»„ï¼š");
 		for (int b : a) {
-			System.out.print(b + "£»");
+			System.out.print(b + "ï¼›");
 		}
 
 		System.out.println();
 
-		// ´òÓ¡Êı×é·½Ê½2
-		System.out.print(Arrays.toString(a)); // °ÑÊı×é×ª»»ÎªÒ»¸ö×Ö·û´®½øĞĞ´òÓ¡
+		// æ‰“å°æ•°ç»„æ–¹å¼2
+		System.out.print(Arrays.toString(a)); // æŠŠæ•°ç»„è½¬æ¢ä¸ºä¸€ä¸ªå­—ç¬¦ä¸²è¿›è¡Œæ‰“å°
 	}
 }

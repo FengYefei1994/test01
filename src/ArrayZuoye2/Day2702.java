@@ -4,10 +4,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * ¶ş¡¢	ÓĞÒ»¸öÊıÁĞ£º8£¬4£¬2£¬1£¬23£¬344£¬12
-a)	Ñ­»·Êä³öÊıÁĞµÄÖµ
-b)	ÇóÊıÁĞÖĞËùÓĞÊıÖµµÄºÍ
-c)	²ÂÊıÓÎÏ·£º´Ó¼üÅÌÖĞÈÎÒâÊäÈëÒ»¸öÊı¾İ£¬ÅĞ¶ÏÊıÁĞÖĞÊÇ·ñ°üº¬´ËÊı
+ * äºŒã€	æœ‰ä¸€ä¸ªæ•°åˆ—ï¼š8ï¼Œ4ï¼Œ2ï¼Œ1ï¼Œ23ï¼Œ344ï¼Œ12
+a)	å¾ªç¯è¾“å‡ºæ•°åˆ—çš„å€¼
+b)	æ±‚æ•°åˆ—ä¸­æ‰€æœ‰æ•°å€¼çš„å’Œ
+c)	çŒœæ•°æ¸¸æˆï¼šä»é”®ç›˜ä¸­ä»»æ„è¾“å…¥ä¸€ä¸ªæ•°æ®ï¼Œåˆ¤æ–­æ•°åˆ—ä¸­æ˜¯å¦åŒ…å«æ­¤æ•°
 
  */
 public class Day2702 {
@@ -16,33 +16,33 @@ public class Day2702 {
 		
 		int[] a= {8,4,2,1,23,344,12};
 		
-		//Êä³öÊı×éÔªËØ
-		System.out.print("Êı×éÔªËØÎª£º");
+		//è¾“å‡ºæ•°ç»„å…ƒç´ 
+		System.out.print("æ•°ç»„å…ƒç´ ä¸ºï¼š");
 		System.out.println(Arrays.toString(a));
 		
-		//ÊıÁĞËùÓĞÔªËØºÍ
+		//æ•°åˆ—æ‰€æœ‰å…ƒç´ å’Œ
 		int sum=0;
 		for(int b:a) {
 			sum+=b;
 		}
-		System.out.println("ÔªËØºÍÎª£º"+sum);
+		System.out.println("å…ƒç´ å’Œä¸ºï¼š"+sum);
 		
 		
-		//²Â¼üÅÌÊäÈëµÄÖµÊÇ·ñÔÚÊı×éÖĞ
+		//çŒœé”®ç›˜è¾“å…¥çš„å€¼æ˜¯å¦åœ¨æ•°ç»„ä¸­
 		Scanner scan=new Scanner(System.in);
-		System.out.print("ÇëÊäÈëÒ»¸öÕûÊı£º");
+		System.out.print("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
 		int c=scan.nextInt();
 		scan.close();
 		int i=0;
 		for1:for(int b:a) {
 			if(b==c) {
-				System.out.println("ÓĞÏàÍ¬ÔªËØ£º"+c);
+				System.out.println("æœ‰ç›¸åŒå…ƒç´ ï¼š"+c);
 				++i;
 				break for1;
 			}
 		}
 		while(i==0) {
-			System.out.println("ÎŞÏàÍ¬ÔªËØ");
+			System.out.println("æ— ç›¸åŒå…ƒç´ ");
 			break;
 		}
 	}

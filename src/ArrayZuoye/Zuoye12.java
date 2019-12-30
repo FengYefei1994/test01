@@ -2,14 +2,14 @@ package ArrayZuoye;
 
 import java.util.Scanner;
 
-//5.12	´Ó¼üÅÌ½ÓÊÜ10¸öÕûÊı±£´æÔÚÊı×éÖĞ£¬½«10¸öÊıÖĞ×î´óµÄÊıÓëµÚÒ»¸öÔªËØ½»»»£¬×îĞ¡µÄÊıÓë×îºóÒ»¸öÔªËØ½»»»£¬ÆäÓàÔªËØÎ»ÖÃ²»±ä£¬Êä³ö½»»»Ç°ºóÊı×éÔªËØµÄÖµ
+//5.12	ä»é”®ç›˜æ¥å—10ä¸ªæ•´æ•°ä¿å­˜åœ¨æ•°ç»„ä¸­ï¼Œå°†10ä¸ªæ•°ä¸­æœ€å¤§çš„æ•°ä¸ç¬¬ä¸€ä¸ªå…ƒç´ äº¤æ¢ï¼Œæœ€å°çš„æ•°ä¸æœ€åä¸€ä¸ªå…ƒç´ äº¤æ¢ï¼Œå…¶ä½™å…ƒç´ ä½ç½®ä¸å˜ï¼Œè¾“å‡ºäº¤æ¢å‰åæ•°ç»„å…ƒç´ çš„å€¼
 
 public class Zuoye12 {
 
 	public static void main(String[] args) {
 		int[] arr = new int[10];
 		Scanner scan = new Scanner(System.in);
-		System.out.print("ÇëÊäÈëÊı×éÔªËØ£º");
+		System.out.print("è¯·è¾“å…¥æ•°ç»„å…ƒç´ ï¼š");
 		int max = 0;
 		int max1 = 0;
 		int min = 10000;
@@ -27,13 +27,13 @@ public class Zuoye12 {
 			}
 		}
 		scan.close();
-		System.out.print("ĞŞ¸ÄÇ°Êı×é£º");
+		System.out.print("ä¿®æ”¹å‰æ•°ç»„ï¼š");
 		for (int a : arr) {
-			System.out.print(a + "£»");
+			System.out.print(a + "ï¼›");
 		}
 		System.out.println();
 
-		// ½»»»×î´óÖµ¡¢×îĞ¡Öµ
+		// äº¤æ¢æœ€å¤§å€¼ã€æœ€å°å€¼
 		int tmp = arr[0];
 		arr[0] = arr[max1];
 		arr[max1] = tmp;
@@ -42,10 +42,10 @@ public class Zuoye12 {
 		arr[9] = arr[min1];
 		arr[min1] = tmp;
 
-		// Êä³ö½»»»ºóÊı×é
-		System.out.print("ĞŞ¸ÄºóÊı×é£º");
+		// è¾“å‡ºäº¤æ¢åæ•°ç»„
+		System.out.print("ä¿®æ”¹åæ•°ç»„ï¼š");
 		for (int a : arr) {
-			System.out.print(a + "£»");
+			System.out.print(a + "ï¼›");
 		}
 	}
 }

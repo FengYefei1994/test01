@@ -6,17 +6,17 @@ public class Zuoye02 {
 
 	public static void main(String[] args) {
 
-		// 5.2 ×Ô¶¨ÒåÊı×é²¢Êä³ö¼«Öµ¼°ºÍ
+		// 5.2 è‡ªå®šä¹‰æ•°ç»„å¹¶è¾“å‡ºæå€¼åŠå’Œ
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÊı×é³¤¶È£º");
-		int len = scan.nextInt(); // ¶¨ÒåÊı×é³¤¶È±äÁ¿
-		int[] a = new int[len]; // ĞÂ½¨Êı×é£¬Êı×é³¤¶ÈÍ¨¹ıÄ³ÖÖÍ¾¾¶»ñÈ¡
+		System.out.println("è¯·è¾“å…¥æ•°ç»„é•¿åº¦ï¼š");
+		int len = scan.nextInt(); // å®šä¹‰æ•°ç»„é•¿åº¦å˜é‡
+		int[] a = new int[len]; // æ–°å»ºæ•°ç»„ï¼Œæ•°ç»„é•¿åº¦é€šè¿‡æŸç§é€”å¾„è·å–
 		int sum = 0;
 		for (int i = 0; i < len;) {
-			System.out.print("ÇëÊäÈëµÚ" + (i + 1) + "¸öÔªËØ£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬" + (i + 1) + "ä¸ªå…ƒç´ ï¼š");
 			a[i] = (int) scan.nextInt();
 			sum = sum + a[i];
-			// Êı×éÖĞÅÅĞò
+			// æ•°ç»„ä¸­æ’åº
 			for (int j = 0; j < i; ++j) {
 				if (a[i] < a[j]) {
 					int tmp = a[j];
@@ -26,13 +26,13 @@ public class Zuoye02 {
 			}
 			++i;
 		}
-		System.out.print("Êı×éÔªËØÎª£º");
+		System.out.print("æ•°ç»„å…ƒç´ ä¸ºï¼š");
 		for (int i1 = 0; i1 < a.length; ++i1) {
-			System.out.print(a[i1] + "£¬");
+			System.out.print(a[i1] + "ï¼Œ");
 		}
 		System.out.println();
-		System.out.println("×î´óÖµ£º" + a[len - 1] + "£»×îĞ¡Öµ£º" + a[0]);
-		System.out.println("Êı×éÔªËØºÍÎª£º" + sum);
+		System.out.println("æœ€å¤§å€¼ï¼š" + a[len - 1] + "ï¼›æœ€å°å€¼ï¼š" + a[0]);
+		System.out.println("æ•°ç»„å…ƒç´ å’Œä¸ºï¼š" + sum);
 		scan.close();
 	}
 }

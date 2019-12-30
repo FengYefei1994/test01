@@ -1,4 +1,4 @@
-package swtich;
+package swith;
 
 public class swtich {
 	public static void main(String args[]){	

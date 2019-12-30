@@ -1,13 +1,13 @@
 /*
- * Á½ÖÖËæ»úÊıÉú³É·½Ê½£º
- * 1¡¢Random ran1=new Random(); 
- * 		int a =ran1.nextInt(30);¡ª¡ª¡ª¡ªrandom.nextInt(N)£¬Éú³É[0, N£©µÄËæ»úÕûÊı
- *		Éú³É·¶Î§ÄÚËæ»úÊı[min, max]£¬ random.nextInt(max) % (max - min + 1) + min 
+ * ä¸¤ç§éšæœºæ•°ç”Ÿæˆæ–¹å¼ï¼š
+ * 1ã€Random ran1=new Random(); 
+ * 		int a =ran1.nextInt(30);â€”â€”â€”â€”random.nextInt(N)ï¼Œç”Ÿæˆ[0, Nï¼‰çš„éšæœºæ•´æ•°
+ *		ç”ŸæˆèŒƒå›´å†…éšæœºæ•°[min, max]ï¼Œ random.nextInt(max) % (max - min + 1) + min 
  * 
- * 2¡¢Math.random()
- * 		Éú³É [max,min] ·¶Î§ÄÚµÄËæ»úÊı×Ö
+ * 2ã€Math.random()
+ * 		ç”Ÿæˆ [max,min] èŒƒå›´å†…çš„éšæœºæ•°å­—
  *		int i1 =(int) Math.random() * (max-min+1)+min;
- *3¡¢Éú³ÉÈı¸öËæ»úÊı£¬½øĞĞÈı½ÇĞÎ¹¹³ÉÅĞ¶Ï
+ *3ã€ç”Ÿæˆä¸‰ä¸ªéšæœºæ•°ï¼Œè¿›è¡Œä¸‰è§’å½¢æ„æˆåˆ¤æ–­
  */
 
 package RandomTri;
@@ -16,12 +16,12 @@ import java.util.*;
 public class program {
 
 	public static void main(String[] args) {
-		Random ran1=new Random();                        //À¨ºÅÖĞÎªÉú³ÉËæ»úÊı¾İµÄÖÖ×Ó¡ª¡ªÏàµ±ÓÚÖĞĞÄÖµ
+		Random ran1=new Random();                        //æ‹¬å·ä¸­ä¸ºç”Ÿæˆéšæœºæ•°æ®çš„ç§å­â€”â€”ç›¸å½“äºä¸­å¿ƒå€¼
 		int[] Arr1= {0,0,0};
 		for(int i=0;i<3;i++) {
-			Arr1[i]=ran1.nextInt(122)%(122-97+1)+97;      //Éú³É97-122µÄËæ»úÕûÊı
+			Arr1[i]=ran1.nextInt(122)%(122-97+1)+97;      //ç”Ÿæˆ97-122çš„éšæœºæ•´æ•°
 		}
-		//Êı×éÖĞÅÅĞò£ºÃ°Åİ
+		//æ•°ç»„ä¸­æ’åºï¼šå†’æ³¡
 		for(int i=1;i<Arr1.length;i++){
 			for(int j=0;j<Arr1.length-1;j++){
 				if(Arr1[j]>Arr1[j+1]){
@@ -35,16 +35,16 @@ public class program {
 		int a=Arr1[0];
 		int b=Arr1[1];
 		int c=Arr1[2];
-		if((a+b<c)) {                                 //½Ï¶ÌÁ½±ßÖ®ºÍ´óÓÚµÚÈı±ß¼´¹¹³ÉÈı½ÇĞÎ
-			System.out.println("²»ÄÜ¹¹³ÉÈı½ÇĞÎ");
+		if((a+b<c)) {                                 //è¾ƒçŸ­ä¸¤è¾¹ä¹‹å’Œå¤§äºç¬¬ä¸‰è¾¹å³æ„æˆä¸‰è§’å½¢
+			System.out.println("ä¸èƒ½æ„æˆä¸‰è§’å½¢");
 		}else if(a==b&&b==c){
-			System.out.println("¹¹³ÉµÈ±ßÈı½ÇĞÎ");
+			System.out.println("æ„æˆç­‰è¾¹ä¸‰è§’å½¢");
 		}else if((a==b)&&(a*a+b*b==c*c)) {
-			System.out.println("¹¹³ÉµÈÑüÖ±½ÇÈı½ÇĞÎ");
+			System.out.println("æ„æˆç­‰è…°ç›´è§’ä¸‰è§’å½¢");
 		}else if((a==b)||(b==c)) {
-			System.out.println("¹¹³ÉµÈÑüÈı½ÇĞÎ");
+			System.out.println("æ„æˆç­‰è…°ä¸‰è§’å½¢");
 		}else {
-			System.out.println("¹¹³ÉÆÕÍ¨Èı½ÇĞÎ");
+			System.out.println("æ„æˆæ™®é€šä¸‰è§’å½¢");
 		}
 		
 	}

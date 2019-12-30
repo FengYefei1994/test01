@@ -5,22 +5,22 @@ import java.util.Arrays;
 public class Zuoye03 {
 
 	public static void main(String[] args) {
-		// 5.3 ÕûÊıÊı×é£¬ÆäÖĞ´æ·Å×ÅĞòÁĞ45,6,23,8,26,98,6,15¡£Çë½«¸ÃĞòÁĞÅÅĞò²¢µ¹ĞòÊä³ö¡£
+		// 5.3 æ•´æ•°æ•°ç»„ï¼Œå…¶ä¸­å­˜æ”¾ç€åºåˆ—45,6,23,8,26,98,6,15ã€‚è¯·å°†è¯¥åºåˆ—æ’åºå¹¶å€’åºè¾“å‡ºã€‚
 		int[] array = new int[] { 45, 6, 23, 8, 26, 98, 6, 15 };
-		Arrays.sort(array); // Í¨¹ıArrays°ü£¬¿ÉÊ¡ÂÔÑ­»·ÅÅĞòÎÊÌâ
+		Arrays.sort(array); // é€šè¿‡ArraysåŒ…ï¼Œå¯çœç•¥å¾ªç¯æ’åºé—®é¢˜
 		for (int j = array.length - 1; j >= 0; --j) {
-			System.out.print(array[j] + "£¬");
+			System.out.print(array[j] + "ï¼Œ");
 		}
 
-		// ÅÅĞò²¿·Ö£ºÉıĞò
+		// æ’åºéƒ¨åˆ†ï¼šå‡åº
 		/*
 		 * for(int i=1;i<array.length;i++){ for(int j=0;j<array.length-1;j++){
 		 * if(array[j]>array[j+1]){ int tmp=array[j]; array[j]=array[j+1];
 		 * array[j+1]=tmp; } } }
 		 */
-		// ÔöÇ¿forÑ­»·
+		// å¢å¼ºforå¾ªç¯
 		for (int j : array) {
-			System.out.print(j + "£¬");
+			System.out.print(j + "ï¼Œ");
 		}
 
 	}

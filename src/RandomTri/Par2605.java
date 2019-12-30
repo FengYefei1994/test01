@@ -10,12 +10,12 @@ public class Par2605 {
 		int i=0;
 		int sum=0;
 		do {
-			System.out.print("请输入第"+(i+1)+"个值：");
+			System.out.print("璇疯緭鍏ョ"+(i+1)+"涓�硷細");
 			b[i]=scan.nextInt();
 			sum+=b[i];
 			++i;
 		}while(i<10);
 		scan.close();
-		System.out.println("10个数的和是："+sum);
+		System.out.println("10涓暟鐨勫拰鏄細"+sum);
 	}
 }

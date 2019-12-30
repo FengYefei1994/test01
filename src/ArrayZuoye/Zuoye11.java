@@ -1,6 +1,6 @@
 package ArrayZuoye;
 
-/*½«×îĞ¡µÄÊıÓë×îĞ¡µÄÊıËùÔÚµÄÏÂ±êÊä³ö
+/*å°†æœ€å°çš„æ•°ä¸æœ€å°çš„æ•°æ‰€åœ¨çš„ä¸‹æ ‡è¾“å‡º
 */
 public class Zuoye11 {
 
@@ -15,7 +15,7 @@ public class Zuoye11 {
 				num = i;
 			}
 		}
-		System.out.println("×îĞ¡ÖµÊÇ£º" + min);
-		System.out.println("×îĞ¡ÖµÏÂ±êÊÇ£º" + num);
+		System.out.println("æœ€å°å€¼æ˜¯ï¼š" + min);
+		System.out.println("æœ€å°å€¼ä¸‹æ ‡æ˜¯ï¼š" + num);
 	}
 }

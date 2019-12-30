@@ -1,15 +1,15 @@
 package ArrayZuoye2;
 
 /*
- * Èı¡¢	ÔÚ¿ØÖÆÌ¨ÏÔÊ¾5¼şÌØ¼ÛÉÌÆ·Ãû³Æ
+ * ä¸‰ã€	åœ¨æ§åˆ¶å°æ˜¾ç¤º5ä»¶ç‰¹ä»·å•†å“åç§°
 
  */
 public class Day2703 {
 
 	public static void main(String[] args) {
 		
-		String[] a= {"Nike±³°ü","AidssÔË¶¯ÉÀ","ÀîÄşÔË¶¯Ğ¬","KappaÍâÌ×","361¡ãÑü°ü"};
-		System.out.println("±¾´Î»î¶¯ÌØ¼ÛÉÌÆ·ÓĞ£º");
+		String[] a= {"NikeèƒŒåŒ…","Aidssè¿åŠ¨è¡«","æå®è¿åŠ¨é‹","Kappaå¤–å¥—","361Â°è…°åŒ…"};
+		System.out.println("æœ¬æ¬¡æ´»åŠ¨ç‰¹ä»·å•†å“æœ‰ï¼š");
 		for(String b:a) {
 			System.out.println(b);
 		}

@@ -3,7 +3,7 @@ package ArrayZuoye;
 public class Program {
 
 	public static void main(String[] args) {
-		// 5.1 ´òÓ¡3ĞĞÊı×é
+		// 5.1 æ‰“å°3è¡Œæ•°ç»„
 		int[] a = { 7, 8, 78, 56, 76, 8, 87, 54, 7 };
 		for (int i = 0; i < 3; i++) {
 			System.out.print(a[i] + ",");

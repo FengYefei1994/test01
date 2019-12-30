@@ -1,7 +1,7 @@
 package ArrayZuoye;
 
-/*5.15	Ê¹ÓÃËæ»úÊı¸øÒ»¸ö³¤¶ÈÎª10µÄÕûĞÍÊı×é¸³Öµ,È»ºóÓÃÈÎÒâÒ»ÖÖÅÅĞòËã·¨¶Ô10¸öÕûÊıÅÅĞò
- * £¨²»¿ÉÒÔµ÷ÓÃÏÖ³ÉµÄÅÅĞò·½·¨£©¡£
+/*5.15	ä½¿ç”¨éšæœºæ•°ç»™ä¸€ä¸ªé•¿åº¦ä¸º10çš„æ•´å‹æ•°ç»„èµ‹å€¼,ç„¶åç”¨ä»»æ„ä¸€ç§æ’åºç®—æ³•å¯¹10ä¸ªæ•´æ•°æ’åº
+ * ï¼ˆä¸å¯ä»¥è°ƒç”¨ç°æˆçš„æ’åºæ–¹æ³•ï¼‰ã€‚
 */
 public class Zuoye15 {
 
@@ -11,12 +11,12 @@ public class Zuoye15 {
 		for (int i = 0; i < a.length - 1; ++i) {
 			a[i] = (int) (Math.random() * 10);
 		}
-		System.out.print("Ëæ»úÊı×é£º");
+		System.out.print("éšæœºæ•°ç»„ï¼š");
 		for (int b : a) {
-			System.out.print(b + "£»");
+			System.out.print(b + "ï¼›");
 		}
 		System.out.println();
-		// Ã°Åİ
+		// å†’æ³¡
 		for (int i = 1; i < 10; ++i) {
 			for (int j = 0; j < a.length - 1; ++j) {
 				if (a[j] > a[j + 1]) {
@@ -27,9 +27,9 @@ public class Zuoye15 {
 			}
 		}
 
-		System.out.print("ÅÅĞòºóÊı×é£º");
+		System.out.print("æ’åºåæ•°ç»„ï¼š");
 		for (int b : a) {
-			System.out.print(b + "£»");
+			System.out.print(b + "ï¼›");
 		}
 	}
 }

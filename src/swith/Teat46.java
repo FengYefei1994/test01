@@ -1,4 +1,4 @@
-package swtich;
+package swith;
 
 import java.util.Arrays;
 

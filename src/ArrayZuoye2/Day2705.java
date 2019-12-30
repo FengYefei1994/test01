@@ -4,18 +4,18 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- *Îå¡¢Ñ­»·Â¼Èë5Î»Ñ§Ô±³É¼¨£¬½øĞĞÉıĞòÅÅÁĞºóÊä³ö½á¹û£¬
- *Ê¹ÓÃjava.util.ArraysÀàµÄsort()·½·¨
+ *äº”ã€å¾ªç¯å½•å…¥5ä½å­¦å‘˜æˆç»©ï¼Œè¿›è¡Œå‡åºæ’åˆ—åè¾“å‡ºç»“æœï¼Œ
+ *ä½¿ç”¨java.util.Arraysç±»çš„sort()æ–¹æ³•
  */
 public class Day2705 {
 
 	public static void main(String[] args) {
 		
 		int[] a= new int[5];
-		System.out.println("ÇëÊäÈë5¸öÑ§Éú³É¼¨£º");
+		System.out.println("è¯·è¾“å…¥5ä¸ªå­¦ç”Ÿæˆç»©ï¼š");
 		Scanner scan=new Scanner(System.in);
 		for(int i=0;i<5;++i) {
-			System.out.print("ÇëÊäÈëµÚ"+(1+i)+"¸öÑ§Éú³É¼¨£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬"+(1+i)+"ä¸ªå­¦ç”Ÿæˆç»©ï¼š");
 			a[i]=scan.nextInt();
 		}
 		scan.close();

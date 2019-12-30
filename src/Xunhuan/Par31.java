@@ -12,8 +12,8 @@ public class Par31 {
 		}
 		return true;
 
-		int tmp = (int) Math.sqrt(num);//»ñÈ¡Æ½·½¸ù
-		//ÔÚ6µÄ±¶ÊıÁ½²àµÄÒ²¿ÉÄÜ²»ÊÇËØÊı
+		int tmp = (int) Math.sqrt(num);//è·å–å¹³æ–¹æ ¹
+		//åœ¨6çš„å€æ•°ä¸¤ä¾§çš„ä¹Ÿå¯èƒ½ä¸æ˜¯ç´ æ•°
 		for(int i=5; i<=tmp; i+=6) {
 			if(num%i==0 || num%(i+2)==0) {
 				return false;
@@ -23,12 +23,12 @@ public class Par31 {
 		*/
 	
 		
-		//Á½¸ö½ÏĞ¡ÊıÁíÍâ´¦Àí 
+		//ä¸¤ä¸ªè¾ƒå°æ•°å¦å¤–å¤„ç† 
 		if(num==2 || num==3) {
 			return true;
 		}
 			
-		//²»ÔÚ6µÄ±¶ÊıÁ½²àµÄÒ»¶¨²»ÊÇËØÊı
+		//ä¸åœ¨6çš„å€æ•°ä¸¤ä¾§çš„ä¸€å®šä¸æ˜¯ç´ æ•°
 		if(num%6!=1 && num%6!=5) {
 			return false;
 		}

@@ -10,7 +10,7 @@ public class Zuoye07 {
 		Scanner input = new Scanner(System.in);
 
 		int[] b = Arrays.copyOf(a, 10);
-		System.out.print("ÇëÊäÈë10¸ö³É¼¨£º");
+		System.out.print("è¯·è¾“å…¥10ä¸ªæˆç»©ï¼š");
 		for (int i = 0; i < 10; ++i) {
 			b[i] = input.nextInt();
 		}
@@ -20,6 +20,6 @@ public class Zuoye07 {
 		for (; i < b.length - 1; ++i) {
 			sum = sum + b[i];
 		}
-		System.out.println("¸ÃÑ¡ÊÖ×îºóµÃ·Ö£º" + ((float) sum / i));
+		System.out.println("è¯¥é€‰æ‰‹æœ€åå¾—åˆ†ï¼š" + ((float) sum / i));
 	}
 }
